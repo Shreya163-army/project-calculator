@@ -1,0 +1,135 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+    margin: 0;
+}
+
+/* Calculator container styling */
+.calculator {
+    width: 350px;
+    background: #ffffff;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Display area styling */
+.display {
+    width: 100%;
+    height: 60px;
+    text-align: right; /* Align text to the right */
+    font-size: 2rem; /* Large font size for better visibility */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #f3f4f6; /* Light background for the display */
+    border-radius: 10px;
+    color: #333; /* Dark text color */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+}
+
+/* Buttons container styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for buttons */
+    gap: 15px; /* Space between buttons */
+    width: 100%;
+}
+
+/* General button styling */
+.button {
+    background: #4caf50; /* Default green background */
+    border: none;
+    font-size: 1.5rem; /* Large font size for buttons */
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    color: white; /* White text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-3px); /* Lift button on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Active button effect */
+.button:active {
+    transform: translateY(2px); /* Push button down on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+/* Clear button styling */
+.button.clear {
+    background: #f44336; /* Red background for clear button */
+}
+
+.button.clear:hover {
+    background: #e53935; /* Darker red on hover */
+}
+
+/* Equal button styling */
+.button.equal {
+    background: #2196f3; /* Blue background for equal button */
+    grid-column: span 2; /* Span two columns */
+}
+
+.button.equal:hover {
+    background: #1e88e5; /* Darker blue on hover */
+}
+
+/* Operator buttons styling */
+.button.operator {
+    background: #ff9800; /* Orange background for operators */
+}
+
+.button.operator:hover {
+    background: #fb8c00; /* Darker orange on hover */
+}
+
+/* Backspace button styling */
+.button.backspace {
+    background: #ff5722; /* Bright orange for backspace */
+}
+
+.button.backspace:hover {
+    background: #e64a19; /* Darker orange on hover */
+}
+
+/* Memory button styling */
+.button.memory {
+    background: #9c27b0; /* Purple background for memory button */
+}
+
+.button.memory:hover {
+    background: #7b1fa2; /* Darker purple on hover */
+}
+
+/* Factorial button styling */
+.button.factorial {
+    background: #673ab7; /* Deep purple for factorial button */
+}
+
+.button.factorial:hover {
+    background: #5e35b1; /* Darker deep purple on hover */
+}
+
+/* Percentage button styling */
+.button.percentage {
+    background: #ff9800; /* Orange background for percentage button */
+}
+
+.button.percentage:hover {
+    background: #fb8c00; /* Darker orange on hover */
+}

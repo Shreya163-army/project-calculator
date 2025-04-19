@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Calculator</title>
+    <!-- Link to the external CSS file for styling -->
+    <link href="calculater.css" rel="stylesheet">
+</head>
+<h1><U>Simple Calculator</U></h1><br>
+<body>
+    <div class="calculator">
+        <!-- Display area for showing the current input and result -->
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <!-- Clear and Backspace buttons -->
+            <button class="button clear" onclick="clearDisplay()">AC</button>
+            <button class="button backspace" onclick="backspace()">⌫</button>
+            
+            <!-- Operator buttons -->
+            <button class="button operator" onclick="appendOperation('/')">/</button>
+            <button class="button operator" onclick="appendOperation('*')">*</button>
+
+            <!-- Number buttons (7, 8, 9) -->
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="appendOperation('-')">-</button>
+
+            <!-- Number buttons (4, 5, 6) -->
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="appendOperation('+')">+</button>
+
+            <!-- Number buttons (1, 2, 3) -->
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+
+            <!-- Number button (0), Square Root, Decimal, and Equal buttons -->
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="calculateSquareRoot()">√</button>
+            <button class="button" onclick="appendNumber('.')">.</button>
+            <button class="button equal" onclick="calculate()">=</button>
+
+            <!-- Advanced functionality buttons -->
+            <button class="button" onclick="calculateExponent()">xⁿ</button>
+            <button class="button" onclick="calculateFactorial()">n!</button>
+            <button class="button" onclick="calculateMemory()">M+</button>
+            <button class="button" onclick="calculatePercentage()">%</button>
+
+            <!-- History button -->
+            <button class="button history" onclick="toggleHistory()">History</button>
+        </div>
+        <!-- History container -->
+        <div id="history-container" class="history-container" style="display: none;">
+            <h3>Calculation History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <!-- Link to the external JavaScript file for calculator logic -->
+    <script src="calculater.js"></script>
+</body>
+</html>
