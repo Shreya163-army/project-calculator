@@ -44,12 +44,6 @@ PROJECT CALCULATER/ ├── Calculater.html # Main HTML file ├── calcula
 1. Clone or download the repository to your local machine.
 2. Open the `Calculater.html` file in your browser.
 
-## License
-
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
 **Author**: Shreya Shirke
 
 
